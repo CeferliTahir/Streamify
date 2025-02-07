@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #10141E;
+}
+
+.scroll {
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.play-hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+.play-button {
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+.active svg path {
+    fill: white;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    .navLink-home svg path:hover {
+        fill: #FC4747;
+    }
+
+    .navLink-movies svg path:hover {
+        fill: #FC4747;
+    }
+
+    .navLink-series svg path:hover {
+        fill: #FC4747;
+    }
+
+    .save-button:hover svg path {
+        stroke: #10141E;
+    }
+
+    .save-button:hover svg circle {
+        fill: white;
+        opacity: 100;
+    }
+
+    .save-button:hover svg {
+        fill: white;
+    }
+}
