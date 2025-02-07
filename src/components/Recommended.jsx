@@ -128,7 +128,11 @@ const Recommended = () => {
                 )}
           </ul>
         </div>
-        <LoadMore handleButton={handleButton} searchValue={searchValue} />
+        <LoadMore
+          handleButton={handleButton}
+          searchValue={searchValue}
+          hasError={hasError}
+        />
       </div>
     </>
   );

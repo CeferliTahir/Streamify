@@ -57,7 +57,7 @@ const Movies = () => {
     <>
       <Toaster />
       <div className="md:pl-[165px] md:pt-16 pt-20 flex flex-col gap-[34px] ">
-        <div className="md:pl-0 pl-[15px]">
+        <div className={`md:pl-0 pl-[15px] ${hasError ? "hidden" : "flex"}`}>
           <InputGroup />
         </div>
         <div
@@ -112,7 +112,11 @@ const Movies = () => {
             </ul>
           </div>
         </div>
-        <LoadMore handleButton={handleButton} searchValue={searchValue} />
+        <LoadMore
+          handleButton={handleButton}
+          searchValue={searchValue}
+          hasError={hasError}
+        />
       </div>
     </>
   );
